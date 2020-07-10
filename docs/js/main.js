@@ -15,4 +15,20 @@ $(document).ready(function () {
       mobileMenuToggle.classList.remove('active');
       overlay.classList.remove('active');
   });
+
+  //BACK TOP BUTTON
+  $('#backTop').hide();
+  $(window).scroll (function(){
+    if($(this).scrollTop() > 200) {
+      $('#backTop').fadeIn();
+    }
+    else {
+      $('#backTop').fadeOut();
+    }
+  })
+
+
+
 })
+
+
