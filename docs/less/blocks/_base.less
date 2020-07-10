@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --text: #393f47;
+    --lineButton: #fbdc4d;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #000;
+    line-height: 1.5;
+    position: relative;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    display: none;
+}
+
+#overlay.active {
+    display: block;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+a:focus {
+    outline: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: var(--text);
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+input,
+button {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.title-1 {
+    font-size: 42px;
+    color: #000;
+    font-weight: 800;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+        font-size: 52px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 90px;
+    }
+}
+
+.title-2 {
+    font-size: 30px;
+    color: #000;
+    font-weight: 800;
+
+    @media (min-width: 768px) {
+        font-size: 32px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 40px;
+    }
+}
+
+.title-3 {
+    font-size: 30px;
+    color: #000;
+    font-weight: 800;
+
+    @media (min-width: 768px) {
+        font-size: 32px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 40px;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+        // padding: 0px 30px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+        padding: 0px;
+    }
+}

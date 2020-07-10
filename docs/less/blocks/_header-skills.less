@@ -1,0 +1,119 @@
+.header-skills {
+    margin-top: 70px;
+    margin-bottom: 80px;
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
+
+    @media (min-width: 1200px) {
+        justify-content: space-between;
+    }
+}
+
+.header-skills__do {
+    margin-bottom: 35px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 30px;
+        width: 50%;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 0;
+        width: 750px;
+    }
+}
+
+.title-3 span {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.skills-do__items {
+    @media (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
+}
+
+.skills-do__item {
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @media (min-width: 1200px) {
+        font-size: 24px;
+    }
+}
+
+.header-skills__button {
+    display: none;
+    @media (min-width: 1200px) {
+        display: inline-block;
+        height: 65px;
+    }
+}
+
+.button-portfolio {
+    @media (min-width: 1200px) {
+        display: block;
+        border-radius: 35px;
+        background-color: var(--lineButton);
+        font-size: 22px;
+        font-weight: 700;
+        padding: 16px 40px;
+    }
+    &:hover {
+        background-color: #ffd200;
+        }
+    &:active {
+        background-color: #e1bc10;
+        }
+}
+
+.header-skills__connect {
+    margin-bottom: 25px;
+}
+
+.social-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.social-contact__item {
+    width: 55px;
+
+    @media (min-width: 768px) {
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &:hover {
+        fill: #6cc644;
+    }
+}
+
+.email-skills {
+    margin-top: 15px;
+}
+
+.email-skills a {
+    border-bottom: 1px solid #000;
+
+    @media (min-width: 1200px) {
+        font-size: 24px;
+    }
+
+    &:hover {
+        border-bottom: 1px solid #039be5;
+        color: #039be5;
+    }
+     &:active {
+        border-bottom: 1px solid #ea655f;
+        color: #ea655f;
+    }
+}
