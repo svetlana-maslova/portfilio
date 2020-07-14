@@ -11,7 +11,8 @@
         }
 
     @media (min-width: 1200px) {
-        margin-top: 150px;
+        margin-top: 160px;
+        margin-bottom: 46px;
     }
 }
 
@@ -20,13 +21,14 @@
     
 
     @media (min-width: 768px) {
-        width: 340px;
+        width: 50%;
         margin-bottom: unset;
         padding: 0px 30px;
     }
 
     @media (min-width: 1200px) {
-        width: 50%;
+        // width: 50%;
+        max-width: 460px;
         padding: 0;
         position: relative;
         z-index: 2;
@@ -59,6 +61,19 @@
         z-index: -1;
     }
 
+    @media (min-width: 576px) {
+        &::after {
+        content: "";
+        position: absolute;
+        height: 12px;
+        bottom: 7px;
+        left: -7px;
+        right: -7px;
+        background-color: var(--lineButton);
+        z-index: -1;
+        }
+    }
+
     @media (min-width: 768px) {
         &::after {
             bottom: 12px;
@@ -73,23 +88,28 @@
 }
 .header-content__info {
     @media (min-width: 768px) {
-        width: 340px;
+        width: 50%;
         margin-right: 30px;
     }
 
     @media (min-width: 1200px) {
-        width: 50%;
         margin-right: 60px;
     }
 }
+
 .header-desc {
     margin-top: 30px;
 
+    @media (min-width: 576px) {
+        text-align: center;
+    }
+
     @media (min-width: 768px) {
-        margin-top: 20px;
+        margin-top: 32px;
+        text-align: left;
     }
     @media (min-width: 1200px) {
-        margin-bottom: 50px;
+        margin-bottom: 22px;
     }
 }
 
@@ -114,29 +134,14 @@
 .button-meet {
     @media (min-width: 1200px) {
         display: inline-block;
-        height: 65px;
-        margin-right: 20px;
-        border-radius: 35px;
-        background-color: var(--lineButton);
-        font-size: 22px;
-        font-weight: 700;
-        padding: 16px 40px;
-    &:hover {
-        background-color: #ffd200;
-        }
-    &:active {
-        background-color: #e1bc10;
-        }
+        margin-right: 6px;
     }
 }
 
-.button-contacts {
+.btn.button-contacts {
     @media (min-width: 1200px) {
-        height: 65px;
-        border-radius: 35px;
+        background-color: transparent;
         border: 4px solid rgb(70, 70, 70);
-        font-size: 22px;
-        font-weight: 700;
         padding: 12px 40px;
     &:hover {
         border: 4px solid #797979;
@@ -162,12 +167,12 @@
     }
 
     @media (min-width: 768px) {
-        transform: scale(1);
+        transform: scale(1.1);
         margin-bottom: 50px;
     }
 
     @media (min-width: 1200px) {
-       margin-top: -100px;
-       margin-bottom: 75px;
+       margin-top: -133px;
+       margin-bottom: 24px;
     }
 }

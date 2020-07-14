@@ -2,8 +2,17 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     scroll-behavior: smooth;
+}
+
+body {
+    &::selection {
+        background-color: #fbdc4d;
+    }
+    :focus {
+        outline: none;
+    }
 }
 
 :root {
@@ -31,7 +40,7 @@ body {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 5;
+    z-index: 10;
     display: none;
 }
 
@@ -95,6 +104,21 @@ button {
     cursor: pointer;
 }
 
+.btn  {
+    height: 65px;
+    padding: 16px 40px;
+    border-radius: 35px;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: var(--lineButton);
+    &:hover {
+        background-color: #ffd200;
+        }
+    &:active {
+        background-color: #e1bc10;
+        }
+}
+
 .title-1 {
     font-size: 42px;
     color: #000;
@@ -103,13 +127,23 @@ button {
 
     @media (min-width: 768px) {
         font-size: 52px;
+        
     }
 
     @media (min-width: 1200px) {
         font-size: 90px;
+        line-height: 1.0;
     }
 }
-
+.title-1-header {
+    text-align: left;
+    @media (min-width: 576px) {
+        text-align: center;
+    }
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+}
 .title-2 {
     font-size: 30px;
     color: #000;

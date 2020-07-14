@@ -8,6 +8,7 @@
 
     @media (min-width: 1200px) {
         justify-content: space-between;
+        margin-top: 24px;
     }
 }
 
@@ -22,7 +23,8 @@
 
     @media (min-width: 1200px) {
         margin-right: 0;
-        width: 750px;
+        margin-left: -8px;
+        width: 55%;
     }
 }
 
@@ -33,7 +35,8 @@
 
 .skills-do__items {
     @media (min-width: 1200px) {
-        margin-bottom: 40px;
+        margin-bottom: 43px;
+        margin-left: 29px;
     }
 }
 
@@ -44,6 +47,17 @@
     }
     @media (min-width: 1200px) {
         font-size: 24px;
+        margin-bottom: 0px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 23px;
+            height: 3px;
+            top: 50%;
+            left: -30px;
+            background-color: #000;
+        }
     }
 }
 
@@ -58,18 +72,13 @@
 .button-portfolio {
     @media (min-width: 1200px) {
         display: block;
-        border-radius: 35px;
-        background-color: var(--lineButton);
-        font-size: 22px;
-        font-weight: 700;
-        padding: 16px 40px;
     }
-    &:hover {
-        background-color: #ffd200;
-        }
-    &:active {
-        background-color: #e1bc10;
-        }
+}
+
+.header-skills__contacts {
+    @media (min-width: 1200px) {
+        width: 368px;
+    }
 }
 
 .header-skills__connect {
@@ -80,6 +89,14 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    @media (min-width: 576px) {
+        width: 80%;
+    }
+
+    @media (min-width: 768px) {
+        justify-content: left;
+    }
 }
 
 .social-contact__item {
@@ -93,6 +110,7 @@
     }
 
     &:hover {
+        opacity: 0.5;
         fill: #6cc644;
     }
 }
