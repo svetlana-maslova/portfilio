@@ -67,6 +67,8 @@
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 700;
+    width: fit-content;
+    border-bottom: 1px solid #000;
     &:last-child {
         margin-right: 0;
     } 
@@ -74,6 +76,7 @@
     @media (min-width: 1200px) {
         margin-right: 80px;
         margin-bottom: 0;
+        border-bottom: none;
         &:hover {
             border-bottom: 5px solid var(--lineButton);
         }
@@ -196,4 +199,46 @@
 }
 .header-menu.active {
     transform: translateX(0%);
+}
+
+.header-menu__logo {
+    margin-top: -50px;
+    margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.header-menu__social {
+    margin-top: 40px;
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.social-contact.drop-down {
+    display: flex;
+    justify-content: left;
+}
+
+.social-contact.drop-down a {
+    margin-right: 20px;
+    &:last-child  {
+        margin-right: 0;
+    }
+}
+
+.header-menu__email {
+    margin-top: 25px;
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.email-skills.drop-down a {
+    color: var(--colorLink);
+    border-bottom: 1px solid var(--colorLink);
 }

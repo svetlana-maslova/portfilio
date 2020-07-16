@@ -20,6 +20,7 @@ html {
     --lineButton: #fbdc4d;
     --bgPortfolio: #f4f8f9;
     --uiKitRed: #ea736d;
+    --colorLink: #039be5;
 }
 
 html,
@@ -51,10 +52,15 @@ body {
 }
 
 #page-nav {
-    position: fixed;
-    right: 80px;
-    top: 50%;
-    z-index: 100;
+    display: none;
+
+    @media (min-width: 1200px) {
+        display: block;
+        position: fixed;
+        right: 80px;
+        top: 65%;
+        z-index: 100;
+    }
 }
 
 #page-nav li {
@@ -163,7 +169,7 @@ button {
         line-height: 1.2;
     }
 }
-.title-1-header {
+.title1-header {
     text-align: left;
     @media (min-width: 576px) {
         text-align: center;
