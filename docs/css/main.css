@@ -14,6 +14,7 @@ html {
   --text: #393f47;
   --lineButton: #fbdc4d;
   --bgPortfolio: #f4f8f9;
+  --uiKitRed: #ea736d;
 }
 html,
 body {
@@ -39,6 +40,27 @@ body {
 }
 #overlay.active {
   display: block;
+}
+#page-nav {
+  position: fixed;
+  right: 80px;
+  top: 50%;
+  z-index: 100;
+}
+#page-nav li {
+  width: 14px;
+  height: 14px;
+  background-color: #89b4cb;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  transition: 0.5s;
+}
+#page-nav li a {
+  display: block;
+  height: 100%;
+}
+#page-nav li.active {
+  background-color: var(--uiKitRed);
 }
 #backTop a {
   color: var(--lineButton);
@@ -684,6 +706,7 @@ button {
 @media (min-width: 576px) {
   .social-contact {
     width: 80%;
+    max-width: 300px;
   }
 }
 @media (min-width: 768px) {
