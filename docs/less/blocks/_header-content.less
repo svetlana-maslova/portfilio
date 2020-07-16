@@ -5,14 +5,14 @@
     align-items: center;
 
     @media (min-width: 768px) {
-        margin-top: 50px;
+        margin-top: 61px;
         justify-content: space-between;
         flex-direction: row-reverse;
         }
 
     @media (min-width: 1200px) {
-        margin-top: 160px;
-        margin-bottom: 46px;
+        margin-top: 118px;
+        margin-bottom: 0;
     }
 }
 
@@ -27,9 +27,9 @@
     }
 
     @media (min-width: 1200px) {
-        // width: 50%;
         max-width: 460px;
         padding: 0;
+        margin-bottom: -48px;
         position: relative;
         z-index: 2;
 
@@ -44,6 +44,21 @@
         opacity: 0.5;
         z-index: -1;
         }
+    }
+}
+
+.img-tablet-mobile {
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.img-desktop {
+    display: none;
+
+    @media (min-width: 1200px) {
+        display: block;
     }
 }
 
@@ -63,19 +78,15 @@
 
     @media (min-width: 576px) {
         &::after {
-        content: "";
-        position: absolute;
-        height: 12px;
-        bottom: 7px;
-        left: -7px;
-        right: -7px;
-        background-color: var(--lineButton);
-        z-index: -1;
+            left: -7px;
+            right: -7px;
         }
     }
 
     @media (min-width: 768px) {
         &::after {
+            left: -5px;
+            right: -5px;
             bottom: 12px;
         }
     }
@@ -88,28 +99,31 @@
 }
 .header-content__info {
     @media (min-width: 768px) {
-        width: 50%;
-        margin-right: 30px;
+        width: 340px;
+        margin-right: 28px;
     }
 
     @media (min-width: 1200px) {
+        width: 555px;
+        margin-top: 29px;
         margin-right: 60px;
     }
 }
 
 .header-desc {
-    margin-top: 30px;
+    margin-top: 25px;
 
     @media (min-width: 576px) {
         text-align: center;
     }
 
     @media (min-width: 768px) {
-        margin-top: 32px;
+        margin-top: 15px;
         text-align: left;
     }
     @media (min-width: 1200px) {
-        margin-bottom: 22px;
+        margin-top: 13px;
+        margin-bottom: 31px;
     }
 }
 
@@ -117,6 +131,7 @@
     line-height: 1.7;
     @media (min-width: 1200px) {
         font-size: 24px;
+        line-height: 1.5;
     }
 }
 
@@ -134,7 +149,7 @@
 .button-meet {
     @media (min-width: 1200px) {
         display: inline-block;
-        margin-right: 6px;
+        margin-right: 14px;
     }
 }
 
@@ -155,7 +170,7 @@
 }
 
 .header-back {
-    margin-top: 20px;
+    margin-top: 33px;
     transform: scale(1.8);
 
     @media (min-width: 425px) {
@@ -167,12 +182,12 @@
     }
 
     @media (min-width: 768px) {
-        transform: scale(1.1);
-        margin-bottom: 50px;
+        transform: scale(1);
+        margin-top: -44px;
     }
 
     @media (min-width: 1200px) {
        margin-top: -133px;
-       margin-bottom: 24px;
+       margin-bottom: -14px;
     }
 }

@@ -6,18 +6,19 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    &::selection {
-        background-color: #fbdc4d;
-    }
-    :focus {
-        outline: none;
-    }
+::selection {
+    background-color: #fbdc4d;
 }
+
+:focus {
+    outline: none;
+}
+
 
 :root {
     --text: #393f47;
     --lineButton: #fbdc4d;
+    --bgPortfolio: #f4f8f9;
 }
 
 html,
@@ -67,6 +68,7 @@ a:hover {
 
 a:focus {
     outline: none;
+    // border: 3px dotted #ea736d;
 }
 
 ul {
@@ -132,7 +134,7 @@ button {
 
     @media (min-width: 1200px) {
         font-size: 90px;
-        line-height: 1.0;
+        line-height: 1.2;
     }
 }
 .title-1-header {
@@ -145,16 +147,16 @@ button {
     }
 }
 .title-2 {
-    font-size: 30px;
+    font-size: 42px;
     color: #000;
     font-weight: 800;
 
     @media (min-width: 768px) {
-        font-size: 32px;
+        font-size: 52px;
     }
 
     @media (min-width: 1200px) {
-        font-size: 40px;
+        font-size: 64px;
     }
 }
 
