@@ -831,7 +831,7 @@ button {
 }
 .portfolio {
   padding-top: 45px;
-  padding-bottom: 94px;
+  padding-bottom: 95px;
   background-color: var(--bgPortfolio);
 }
 @media (min-width: 768px) {
@@ -1025,11 +1025,11 @@ button {
   }
 }
 .portfolio-cards__see-all {
-  margin-top: 36px;
+  margin-top: 62px;
 }
 @media (min-width: 768px) {
   .portfolio-cards__see-all {
-    margin-top: -3px;
+    margin-top: -6px;
   }
 }
 @media (min-width: 1200px) {
@@ -1042,5 +1042,39 @@ button {
   font-weight: 400;
   border-bottom: 1px solid #039be5;
   color: #039be5;
+}
+.how-work {
+  padding-top: 48px;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .how-work {
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .how-work {
+    background-image: url(../img/how-work/how-work-bg.jpg);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: repeat-y;
+    padding-top: 125px;
+    padding-bottom: 140px;
+  }
+}
+.title2-howwork {
+  font-size: 38px;
+}
+@media (min-width: 768px) {
+  .title2-howwork {
+    font-size: 52px;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .title2-howwork {
+    font-size: 64px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
