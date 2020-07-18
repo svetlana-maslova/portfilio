@@ -42,7 +42,7 @@
                     </div>
 
                     <a href="index.html" class="header-menu__item">Главная</a>
-                    <a href="#" class="header-menu__item">Работы</a>
+                    <a href="#portfolio" class="header-menu__item">Работы</a>
                     <a href="#" class="header-menu__item">Контакты</a>
 
                     <div class="header-menu__social">
@@ -165,7 +165,84 @@
     <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title-2"><span class="title-line title-line-portfolio">Портфолио</span></h2>
+            <div class="portfolio-menu">
+                <div class="portfolio-menu-toogle">
+                    <button class="portfolio-menu-toogle__item control-active" data-filter="all">Все работы</button>
+                    <button class="portfolio-menu-toogle__item" data-filter=".boots">Bootstrap</button>
+                    <button class="portfolio-menu-toogle__item" data-filter=".wp">WordPress</button>
+                    <button class="portfolio-menu-toogle__item" data-filter=".frondend">Frontend</button>
+                </div>
+            </div>
+            <div class="portfolio-cards__content">
+                <div id="portfolio-projects" class="portfolio-projects">
+                    <!-- карточка 1 -->
+                    <a class="portfolio-cards__item portfolio-cards__item--big mix boots" href="https://test-site74.000webhostapp.com/home-work-webcademy/03-article/index.html" target="_blank">
+                        <div class="portfolio-cards__poster">
+                            <img src="img/portfolio/work1.jpg" alt="Верстка “Форест тревел”">
+                            <button class="more-btn">Смотреть проект</button>
+                        </div>
+                        <div class="portfolio-cards__descrip">
+                            <h4 class="title-4 portfolio-cards__descrip-title">Верстка &ldquo;Форест тревел&rdquo;</h4>
+                            <p class="portfolio-cards__descrip-details">Верстка многостраничного сайта.</p>
+                        </div>
+                    </a>
+                    <!-- // карточка 1 -->
 
+                    <!-- карточка 2 -->
+                    <a class="portfolio-cards__item portfolio-cards__item--big mix frondend" href="https://test-site74.000webhostapp.com/home-work-webcademy/unit-html-mobile-08/index.html" target="_blank">
+                        <div class="portfolio-cards__poster">
+                            <img src="img/portfolio/work2.jpg" alt="Сайт для коворкинга “Юнит”">
+                        </div>
+                        <div class="portfolio-cards__descrip">
+                            <h4 class="title-4 portfolio-cards__descrip-title">Сайт для коворкинга &ldquo;ЮНИТ&rdquo;</h4>
+                            <p class="portfolio-cards__descrip-details">Верстка лендинга.</p>
+                        </div>
+                    </a>
+                    <!-- // карточка 2 -->
+
+                    <!-- карточка 3 -->
+                    <a class="portfolio-cards__item mix wp frondend" href="index.html">
+                        <div class="portfolio-cards__poster">
+                            <img src="img/portfolio/work3.jpg" alt="Верстка “Портфолио”">
+                        </div>
+                        <div class="portfolio-cards__descrip">
+                            <h4 class="title-4 portfolio-cards__descrip-title">Верстка &ldquo;Портфолио&rdquo;</h4>
+                            <p class="portfolio-cards__descrip-details">Верстка лендинга.</p>
+                        </div>
+                    </a>
+                    <!-- // карточка 3 -->
+
+                    <!-- карточка 4 -->
+                    <a class="portfolio-cards__item mix wp" href="https://test-site74.000webhostapp.com/home-work-webcademy/card-motorbike-html/index.html" target="_blank">
+                        <div class="portfolio-cards__poster">
+                            <img src="img/portfolio/work4.jpg" alt="Верстка “Мир авто”">
+                        </div>
+                        <div class="portfolio-cards__descrip">
+                            <h4 class="title-4 portfolio-cards__descrip-title">Верстка &ldquo;Мир авто&rdquo;</h4>
+                            <p class="portfolio-cards__descrip-details">Верстка карточки товара.</p>
+                        </div>
+                    </a>
+                    <!-- // карточка 4 -->
+
+                    <!-- карточка 5 -->
+                    <a class="portfolio-cards__item hide-item mix wp boots" href="https://test-site74.000webhostapp.com/home-work-webcademy/card-book/index.html" target="_blank">
+                        <div class="portfolio-cards__poster">
+                            <img src="img/portfolio/work5.jpg" alt="Верстка “Мир книг”">
+                        </div>
+                        <div class="portfolio-cards__descrip">
+                            <h4 class="title-4 portfolio-cards__descrip-title">Верстка &ldquo;Мир книг&rdquo;</h4>
+                            <p class="portfolio-cards__descrip-details">Верстка карточки товара.</p>
+                        </div>
+                    </a>
+                    <!-- // карточка 5 -->
+
+                </div>
+
+                <div class="portfolio-cards__see-all">
+                        <a href="#">Смотреть все работы</a>
+                </div>
+
+            </div>
         </div>
     </section>
     <!-- // portfolio -->

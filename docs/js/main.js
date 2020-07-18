@@ -39,8 +39,15 @@ $(document).ready(function () {
 		else {
 			$('#backTop').fadeOut();
 		}
-	})
+	});
+
+	// фильтрация проектов MixItUp
+	let containerEl = document.querySelector('#portfolio-projects');
+	let mixer = mixitup(containerEl, {
+		classNames: {
+			block: ""
+		}
+	});
 
 })
-
 
