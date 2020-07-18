@@ -57,8 +57,8 @@
         margin-right: 0;
     }
     
-    &:active,
-    &:hover {
+    &:hover,
+    &:active {
         color: var(--uiKitRed);
     }
 
@@ -69,10 +69,6 @@
 
 .portfolio-menu-toogle__item.control-active {
     color: #000;
-}
-
-.portfolio-cards__content {
-   
 }
 
 .portfolio-projects {
@@ -145,8 +141,15 @@
         transform: translateY(100%);
         transition: 0.3s;
     }
-    &:hover::before {
+    &:hover::before,
+    &:active::before {
         transform: translateY(0%);
+        transition: 0.3s;
+    }
+
+    &:hover .more-btn,
+    &:active .more-btn {
+        opacity: 1;
         transition: 0.3s;
     }
 
@@ -170,10 +173,13 @@
     font-weight: 800;
     color: var(--uiKitRed);
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.5s;
     &:hover {
-        opacity: 1;
-        transition: 0.3s;
+        background-color: rgba(212, 67, 59, 0.5);
+        color: #fff;
+    }
+    &:active {
+        background-color: rgba(212, 67, 59, 1);
     }
 }
 

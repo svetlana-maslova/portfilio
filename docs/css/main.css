@@ -883,8 +883,8 @@ button {
 .portfolio-menu-toogle__item:last-child {
   margin-right: 0;
 }
-.portfolio-menu-toogle__item:active,
-.portfolio-menu-toogle__item:hover {
+.portfolio-menu-toogle__item:hover,
+.portfolio-menu-toogle__item:active {
   color: var(--uiKitRed);
 }
 @media (min-width: 1200px) {
@@ -960,8 +960,14 @@ button {
   transform: translateY(100%);
   transition: 0.3s;
 }
-.portfolio-cards__poster:hover::before {
+.portfolio-cards__poster:hover::before,
+.portfolio-cards__poster:active::before {
   transform: translateY(0%);
+  transition: 0.3s;
+}
+.portfolio-cards__poster:hover .more-btn,
+.portfolio-cards__poster:active .more-btn {
+  opacity: 1;
   transition: 0.3s;
 }
 @media (min-width: 768px) {
@@ -984,11 +990,14 @@ button {
   font-weight: 800;
   color: var(--uiKitRed);
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .more-btn:hover {
-  opacity: 1;
-  transition: 0.3s;
+  background-color: rgba(212, 67, 59, 0.5);
+  color: #fff;
+}
+.more-btn:active {
+  background-color: #d4433b;
 }
 .portfolio-cards__descrip-title {
   margin-bottom: 8px;
