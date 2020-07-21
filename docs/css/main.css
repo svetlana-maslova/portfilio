@@ -16,6 +16,7 @@ html {
   --bgPortfolio: #f4f8f9;
   --uiKitRed: #ea736d;
   --colorLink: #039be5;
+  --footerBg: #333333;
 }
 html,
 body {
@@ -1246,6 +1247,9 @@ button {
     margin-bottom: 1px;
   }
 }
+.title-line.title-line-right::after {
+  display: none;
+}
 @media (min-width: 1200px) {
   .title-line.title-line-right {
     width: fit-content;
@@ -1255,10 +1259,13 @@ button {
     bottom: 2px;
   }
 }
-.title-line.title-line-left {
-  width: fit-content;
+.title-line.title-line-left::after {
+  display: none;
 }
 @media (min-width: 1200px) {
+  .title-line.title-line-left {
+    width: fit-content;
+  }
   .title-line.title-line-left::after {
     height: 7px;
     bottom: 2px;
@@ -1287,5 +1294,26 @@ button {
   .timeLine-text__time {
     font-size: 18px;
   }
+}
+.feedback {
+  padding-top: 57px;
+  padding-bottom: 50px;
+  background-color: var(--bgPortfolio);
+}
+.title2-feedback {
+  text-align: center;
+}
+.feedback-row__img {
+  display: none;
+}
+.feedback-row__contacts {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.footer {
+  padding-top: 35px;
+  padding-bottom: 38px;
+  background-color: var(--footerBg);
 }
 /*# sourceMappingURL=main.css.map */

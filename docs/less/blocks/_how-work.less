@@ -213,6 +213,10 @@
 }
 
 .title-line.title-line-right {
+    &::after {
+        display: none;
+    }
+    
     @media (min-width: 1200px) {
     width: fit-content;
         &::after {
@@ -223,8 +227,12 @@
 }
 
 .title-line.title-line-left {
-    width: fit-content;
+    &::after {
+        display: none;
+    }
+    
     @media (min-width: 1200px) {
+        width: fit-content;
         &::after {
             height: 7px;
             bottom: 2px;
