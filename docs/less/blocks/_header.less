@@ -69,14 +69,18 @@
     font-weight: 700;
     width: fit-content;
     border-bottom: 1px solid #000;
-    &:last-child {
-        margin-right: 0;
-    } 
+    &:last-of-type {
+        margin-bottom: 0;
+    }
         
     @media (min-width: 1200px) {
         margin-right: 80px;
         margin-bottom: 0;
         border-bottom: none;
+        &:last-of-type {
+            margin-right: 0px;
+        }
+        
         &:hover {
             border-bottom: 5px solid var(--lineButton);
         }
