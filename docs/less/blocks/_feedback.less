@@ -1,20 +1,54 @@
 .feedback {
     padding-top: 44px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     background-color: var(--bgPortfolio);
+
+    @media (min-width: 768px) {
+        padding-top: 74px;
+        padding-bottom: 42px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 130px;
+        padding-bottom: 151px;
+    }
+}
+
+.title-line.title-line-feedback {
+    @media (min-width: 1200px) {
+        &::after {
+            bottom: 14px;
+        }
+    }
 }
 
 .title2-feedback {
     text-align: center;
     margin-bottom: 38px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 59px;
+    }
 }
 
 .feedback-row {
+    position: relative;
 
+    @media (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .feedback-row__img {
     display: none;
+    width: 450px;
+    position: absolute;
+    top: 0;
+    left: -350px;
+
+    @media (min-width: 1200px) {
+        display: block;
+    }
 }
 
 .feedback-row__contacts {
@@ -23,6 +57,18 @@
 
 .feedback-row__contacts {
     margin-bottom: 45px;
+
+    @media (min-width: 768px) {
+        width: 340px;
+        margin-right: 25px;
+        padding-right: 70px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 580px;
+        padding-top: 18px;
+        padding-right: 50px;
+    }
 }
 
 .feedback-row__contacts-desc {
@@ -30,14 +76,33 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
+
+    @media (min-width: 768px) {
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+     @media (min-width: 1200px) {
+        font-size: 20px;
+    }
 }
 
 .feedback-row__contacts-block {
     margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 40px;
+    }
 }
 
 .feedback-row__contacts-block-item {
     margin-top: 9px;
+
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
 }
 
 .contact-type {
@@ -54,10 +119,19 @@
     font-size: 18px;
     font-weight: 500;
     color: var(--colorLink);
+    flex-basis: 64%;
 }
 
 .feedback-row__form {
     width: 290px;
+
+    @media (min-width: 768px) {
+        width: 340px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 509px;
+    }
 }
 
 .contacts-form {
@@ -68,12 +142,31 @@
     padding-right: 15px;
     background-color: #fff;
     box-shadow: 0px 28px 40px 0px rgba(194, 219, 235, 1);
+
+    @media (min-width: 768px) {
+        padding-top: 79px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 98px;
+        padding-left: 57px;
+    }
 }
 
 .form-row {
     position: relative;
     margin-bottom: 55px;
     font-weight: 700;
+
+    @media (min-width: 768px) {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 75px;
+    }
 }
 
 .form-row__input {
@@ -83,7 +176,7 @@
     padding-left: 5px;
     padding-right: 5px;
     color: #000;
-    height: 50px;
+    height: 13px;
     resize: none;
     font-weight: 700;
 }
@@ -93,16 +186,28 @@
     padding-bottom: 17px;
     height: auto;
     resize: none;
+
+    @media (min-width: 768px) {
+        padding-bottom: 41px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-bottom: 32px;
+    }
 }
 
 .fake-placeholder {
     position: absolute;
     left: 5px;
-    top: 8px;
+    top: -16px;
     color: #bcbcbc;
     pointer-events: none;
     transition: 0.3s;
     font-size: 20px;
+
+    @media (min-width: 768px) {
+        top: -20px;
+    }
 }
 
 .fake-placeholder.active {
@@ -129,4 +234,16 @@
 
 .button-submit {
     border: none;
+    width: 100%;
+    height: 55px;
+
+    @media (min-width: 768px) {
+        margin-top: 12px;
+    }
+
+    @media (min-width: 1200px) {
+        width: auto;
+        height: 60px;
+        margin-top: 34px;
+    }
 }
