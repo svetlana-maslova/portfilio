@@ -11,6 +11,10 @@
     @media (min-width: 1200px) {
         padding-top: 130px;
         padding-bottom: 151px;
+        background-image: url(../img/feedback/feedback-bg.jpg);
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: repeat-y;
     }
 }
 
@@ -52,10 +56,6 @@
 }
 
 .feedback-row__contacts {
-    
-}
-
-.feedback-row__contacts {
     margin-bottom: 45px;
 
     @media (min-width: 768px) {
@@ -89,6 +89,8 @@
 
 .feedback-row__contacts-block {
     margin-bottom: 30px;
+    position: relative;
+    z-index: 25;
 
     @media (min-width: 768px) {
         margin-bottom: 40px;
@@ -123,7 +125,7 @@
 }
 
 .feedback-row__form {
-    width: 290px;
+    max-width: 400px;
 
     @media (min-width: 768px) {
         width: 340px;
