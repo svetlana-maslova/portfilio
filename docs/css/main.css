@@ -1563,7 +1563,7 @@ button {
 }
 @media (min-width: 1200px) {
   .feedback-row__form {
-    width: 509px;
+    min-width: 509px;
   }
 }
 .contacts-form {
