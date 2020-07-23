@@ -172,13 +172,19 @@
 .form-row__input {
     width: 100%;
     border: 0px;
+    font-size: 20px;
     border-bottom: 2px solid #eaeaea;
+    padding-top: 18px;
     padding-left: 5px;
     padding-right: 5px;
     color: #000;
-    height: 13px;
+    height: 40px;
     resize: none;
     font-weight: 700;
+
+    @media (min-width: 1200px) {
+        padding-top: 0;
+    }
 }
 
 .form-row__input--textarea {
@@ -214,12 +220,16 @@
     font-size: 16px;
     color: #ed9626;
     top: -10px;
-     transition: 0.3s;
+    transition: 0.3s;
+
+    @media (min-width: 1200px) {
+        top: -30px;
+    }
 }
 
 .error {
     color: red;
-    font-size: 14px;
+    font-size: 20px;
     position: relative;
 
     &::after {

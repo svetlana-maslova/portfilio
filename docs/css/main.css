@@ -52,7 +52,7 @@ body {
     display: block;
     position: fixed;
     right: 60px;
-    top: 65%;
+    top: 60%;
     z-index: 100;
   }
 }
@@ -1483,13 +1483,20 @@ button {
 .form-row__input {
   width: 100%;
   border: 0px;
+  font-size: 20px;
   border-bottom: 2px solid #eaeaea;
+  padding-top: 18px;
   padding-left: 5px;
   padding-right: 5px;
   color: #000;
-  height: 13px;
+  height: 40px;
   resize: none;
   font-weight: 700;
+}
+@media (min-width: 1200px) {
+  .form-row__input {
+    padding-top: 0;
+  }
 }
 .form-row__input--textarea {
   padding-top: 17px;
@@ -1527,9 +1534,14 @@ button {
   top: -10px;
   transition: 0.3s;
 }
+@media (min-width: 1200px) {
+  .fake-placeholder.active {
+    top: -30px;
+  }
+}
 .error {
   color: red;
-  font-size: 14px;
+  font-size: 20px;
   position: relative;
 }
 .error::after {
