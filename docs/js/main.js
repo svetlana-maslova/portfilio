@@ -38,6 +38,14 @@ $(document).ready(function () {
 		overlay.classList.toggle('active');
 		bodyElement.classList.add('noscroll');
 	});
+
+	mobMenu.addEventListener('click', function () {
+		mobileMenuToggle.classList.remove('active');
+		this.classList.remove('active');
+		overlay.classList.remove('active');
+		bodyElement.classList.remove('noscroll');
+	});
+
 	window.addEventListener('resize', function(){
 			mobMenu.classList.remove('active');
 			mobileMenuToggle.classList.remove('active');
