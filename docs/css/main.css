@@ -35,6 +35,9 @@ body {
   line-height: 1.5;
   position: relative;
 }
+.noscroll {
+  overflow: hidden;
+}
 #overlay {
   position: fixed;
   top: 0;
@@ -959,7 +962,7 @@ button {
 .portfolio-menu-toogle {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .portfolio-menu-toogle {
     display: block;
   }
@@ -980,6 +983,11 @@ button {
 .portfolio-menu-toogle__item:hover,
 .portfolio-menu-toogle__item:active {
   color: var(--uiKitRed);
+}
+@media (min-width: 768px) {
+  .portfolio-menu-toogle__item {
+    font-size: 17px;
+  }
 }
 @media (min-width: 1200px) {
   .portfolio-menu-toogle__item {
