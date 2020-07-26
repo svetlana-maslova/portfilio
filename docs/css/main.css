@@ -794,11 +794,6 @@ button {
 .skills-do__items {
   width: 240px;
 }
-@media (min-width: 768px) {
-  .skills-do__items {
-    width: 340px;
-  }
-}
 @media (min-width: 1200px) {
   .skills-do__items {
     width: 750px;
