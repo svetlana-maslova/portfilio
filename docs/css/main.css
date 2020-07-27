@@ -364,7 +364,7 @@ button {
     border-bottom: 5px solid var(--lineButton);
   }
   .header-menu__item:focus {
-    border: 3px dotted #ea736d;
+    outline: #ea736d dotted 3px;
   }
 }
 .toggle-menu {
@@ -679,14 +679,22 @@ button {
     margin-bottom: 31px;
   }
 }
-.header-desc p {
+.header-desc__text {
   line-height: 1.7;
 }
 @media (min-width: 1200px) {
-  .header-desc p {
+  .header-desc__text {
     font-size: 24px;
     line-height: 1.5;
   }
+}
+.header-desc__text a {
+  color: inherit;
+  border-bottom: 1px solid var(--footerLink);
+}
+.header-desc__text a:hover {
+  color: inherit;
+  opacity: 0.5;
 }
 .header-content__button {
   display: none;
