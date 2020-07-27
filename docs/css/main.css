@@ -930,13 +930,13 @@ button {
   color: #ea655f;
 }
 .portfolio {
-  padding-top: 45px;
+  margin-top: -50px;
+  padding-top: 76px;
   padding-bottom: 95px;
   background-color: var(--bgPortfolio);
 }
 @media (min-width: 768px) {
   .portfolio {
-    padding-top: 63px;
     padding-bottom: 77px;
   }
 }
@@ -1676,7 +1676,7 @@ button {
 }
 .error {
   color: red;
-  font-size: 20px;
+  font-size: 14px;
   position: relative;
 }
 .error::after {
